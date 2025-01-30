@@ -17,7 +17,11 @@
   <!-- google-font class -->
   <style>
     .font-family{
-      font-family: "Sora", serif;;
+      font-family: "Sora", serif;
+    }
+    .flex-direction a,i,button {
+      display: flex;
+      flex-direction: column;
     }
   </style>
 </head>
@@ -25,27 +29,35 @@
   <!-- header section start -->
       <header class="mr-auto bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3] ">
         <!-- navbar start -->
-        <nav class="flex pl-11 pr-11 items-center pt-3 gap-60">
+        <nav class="flex-direction lg:flex pl-11 pr-11 lg:items-center pt-3 gap-60">
           <!-- logo div here -->
-          <div>
+          <div class="flex justify-between items-center" id="hover">
             <img src="./images/logo-header.png" alt="">
+            <div class="cursor-pointer lg:hidden mt-4">
+              <i class="text-3xl fa-solid fa-bars"></i>
+            </div>
           </div>
-          <!-- nav links here -->
-          <div class="text-lg items-center">
-            <a class="mr-7" href="">Product</a>
-            <a class="mr-7" href="">Product</a>
+            <!-- one horizontal line -->
+            <div class="mt-2 border-b-2 border-[#179800] lg:hidden"></div>
+            <!-- nav links here -->
+            <div class="md:flex-direction lg:flex text-lg items-center hidden lg:block" id="menu1">
+            <a class="mr-7 mt-5 lg:mt-0" href="">Product</a>
+            <a class="mr-7" href="">Services</a>
             <a href="">Contact us</a>
-          </div>
-          <!-- nav icon and buttons here -->
-          <div class="flex gap-4 items-center">
-            <i class="text-xl fa-solid fa-magnifying-glass"></i>
-            <i class="text-xl fa-solid fa-cart-shopping"></i>
+            </div>
+            <!-- nav icon and buttons here -->
+            <div class="flex-direction lg:flex gap-4 items-center hidden lg:block" id="menu2">
+            <i class="text-xl fa-solid fa-magnifying-glass cursor-pointer"></i>
+            <i class="text-xl fa-solid fa-cart-shopping cursor-pointer"></i>
             <button class="px-5 py-1 text-[#111111] border-2 border-[#179800] rounded-lg text-lg">Login</button>
             <button class="px-5 py-1 bg-[#179800] border-2 border-[#179800] text-[#FFFFFF] rounded-lg text-lg">Register</button>
-          </div>
+            </div>
         </nav>
-        <section class=" max-w-5xl bg-slate-50 lg:mx-56 my-24">
+        <!-- banner section start -->
+        <section class="max-w-5xl lg:mx-56 my-16 lg:my-28">
+          <!-- banner container here -->
           <div class="text-center">
+            <!-- banner text here -->
             <div>
               <h1 class="text-6xl text-[#111111] font-semibold">
                 Freshness <span class="text-[#179800]">You Can Count</span> On, Prices You’ll Love!
@@ -54,12 +66,14 @@
                 Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!
               </p>
             </div>
+            <!-- banner image here -->
             <div>
               <img src="./images/hero-vegetables.png" alt="">
             </div>
           </div>
       </section>
     </header>
+    <!-- footer section end -->
   <!-- main section start -->
       <main class="pl-10 pr-10 mr-auto">
 
@@ -68,5 +82,7 @@
       <footer>
 
       </footer>
+  <!-- java script link -->
+      <script src="index.js"></script>
 </body>
 </html>
