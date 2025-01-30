@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <!-- tailwind css link -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- DaisyUI cnd -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <!-- font-awesome icons cnd -->
+  <script src="https://kit.fontawesome.com/49de66769b.js" crossorigin="anonymous"></script>
   <title>Food store</title>
   <!-- google-font class -->
   <style>
@@ -19,12 +23,45 @@
 </head>
 <body class="font-family">
   <!-- header section start -->
-      <header class="pl-10 pr-10 mr-auto">
-    
-      </header>
+      <header class="mr-auto bg-gradient-to-r from-[#FFFFFF] to-[#EFEBE3] ">
+        <!-- navbar start -->
+        <nav class="flex pl-11 pr-11 items-center pt-3 gap-60">
+          <!-- logo div here -->
+          <div>
+            <img src="./images/logo-header.png" alt="">
+          </div>
+          <!-- nav links here -->
+          <div class="text-lg items-center">
+            <a class="mr-7" href="">Product</a>
+            <a class="mr-7" href="">Product</a>
+            <a href="">Contact us</a>
+          </div>
+          <!-- nav icon and buttons here -->
+          <div class="flex gap-4 items-center">
+            <i class="text-xl fa-solid fa-magnifying-glass"></i>
+            <i class="text-xl fa-solid fa-cart-shopping"></i>
+            <button class="px-5 py-1 text-[#111111] border-2 border-[#179800] rounded-lg text-lg">Login</button>
+            <button class="px-5 py-1 bg-[#179800] border-2 border-[#179800] text-[#FFFFFF] rounded-lg text-lg">Register</button>
+          </div>
+        </nav>
+        <section class="">
+          <div class="text-center">
+            <div class="">
+              <h1 class="text-5xl font-bold">Hello there</h1>
+              <p class="py-6">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                quasi. In deleniti eaque aut repudiandae et a id nisi.
+              </p>
+            </div>
+            <div class="">
+              <img class="" src="./images/hero-vegetables.png" alt="">
+            </div>
+          </div>
+      </section>
+    </header>
   <!-- main section start -->
       <main class="pl-10 pr-10 mr-auto">
-        
+
       </main>
   <!--footer section start -->
       <footer>
@@ -32,3 +69,4 @@
       </footer>
 </body>
 </html>
+<!-- max-w-5xl bg-slate-50 justify-center lg:mx-64 -->
